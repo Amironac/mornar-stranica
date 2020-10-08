@@ -1,0 +1,172 @@
+{{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link rel="stylesheet" href="gallery-clean.css">
+
+  <nav class="navbar navbar-expand-lg fixed-top ">
+  <div class="container-xl">
+    <a href="/">
+    <img src="logo.jpg" class="img" alt="">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+        <img src="https://img.icons8.com/android/34/ffffff/menu.png" id="hamburger"/>
+      </span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample07XL" style="">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="" href="/">Početna </a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="/about">O nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="/gallery">Galerija</a>
+        </li>
+        <li class="nav-item">
+          <a class=" disabled" href="/blog" tabindex="-1" aria-disabled="true">Blog </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class=" dropdown-toggle" href="#" id="dropdown07XL" data-toggle="dropdown" aria-expanded="false">Informacije</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown07XL">
+            <a class="dropdown-item" href="/contact">Kontaktirajte nas</a>
+            <a class="dropdown-item" href="/dojam">Ostavite dojam</a>
+           
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<div class="jumbotron" id="heading-gallery">
+    <div class="mreza">
+        <div class="gallery text-center text-light">
+            <h1 class="display-6">Galerija</h1>
+            <p class="lead">
+                Upoznajte našu raznolikost
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="jumbotron gallery-container">
+    <div class="tz-gallery">
+        <div class="grid">
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija1.jpg">
+                    <img src="galerija1.jpg" id="gallery-img">
+                </a>
+                {{!-- <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> --}}
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija2.jpg">
+                    <img src="galerija2.jpg" id="gallery-img">
+                </a>
+                {{!-- <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> --}}
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija3.jpg">
+                    <img src="galerija3.jpg" id="gallery-img">
+                </a>
+                {{!-- <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> --}}
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija4.jpg">
+                    <img src="galerija4.jpg" id="gallery-img">
+                </a>
+                {{!-- <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> --}}
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija5.jpg">
+                    <img src="galerija5.jpg" id="gallery-img">
+                </a>
+
+            </div>
+            <div class="thumbnail">
+                <a class="lightbox" href="galerija6.jpg">
+                    <img src="galerija6.jpg" id="gallery-img">
+                </a>
+            </div>
+            {{#each files}}
+                <div class="thumbnail">
+                    
+                    <a class="lightbox" href="image/{{filename}}">
+                        
+                        <img src="image/{{filename}}" class="box-hidden" id="gallery-img">
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="container wrap-button text-center">
+    <button type="button" id="loadMore" class="btn btn-primary mt-5 btn-lg">Učitaj više</button>
+</div>
+<div class="jumbotron forma-dodaj">
+    <div class="container col-sm-4 upload ">
+        
+            <form action="/upload" method="POST"
+            enctype="multipart/form-data">
+                <div class="form-group">
+                    <h4 class="text-dark text-center">Dodajte fotografiju</h4>
+                    <p class="lead text-left pb-2">Ako imate želju da podijelite fotografiju koristite formu ispod</p>
+                </div>
+                <div class="file-upload">
+                <div class="file-select">
+                    <div class="file-select-button" id="fileName">Izaberite fotografiju</div>
+                    <div class="file-select-name" id="noFile">Nakon što odaberete fotografiju kliknite na dugme </div> 
+                    <input type="file" name="file" id="chooseFile">
+                </div>
+                </div>
+                <input type="submit" value="Dodaj" class="btn btn-outline-dark 
+                btn-block mt-2">
+            </form>
+
+
+        </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(() => {
+
+        $(".box-hidden").slice(0, 0).show();
+
+        $("#loadMore").on("click", (e) => {
+            e.preventDefault();
+
+            $(".box-hidden:hidden").slice(0, 6).slideDown();
+            if ($(".box-hidden:hidden").length == 0) {
+                $("#load").fadeOut("slow");
+            }
+            $("html,body").animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        })
+
+    })
+
+    
+</script>

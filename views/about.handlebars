@@ -1,0 +1,413 @@
+<style>
+  #jumbo{
+    background: url("united.jpg") no-repeat center center/cover;
+    margin:0;
+    padding: 0;
+    height:470px;
+    border-radius: 0%;
+  }
+  .mreza{
+    width:100%;
+    height:100%;
+    
+  }
+  
+  #slide{
+    width:100%;
+    height:250px;
+  }
+  #container{
+    padding-top:15%;
+  }
+  #dojmovi{
+      background: #333;
+      padding:50px 20% 20px 20%;
+      height:250px;
+      
+  }
+  .grid{
+    width:100%;
+    padding: 30px 30% 30px 30%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background: #333;
+  }
+  .grid .box-hidden{
+    display: none;
+}
+  @media(max-width:550px){
+     #container{
+      padding-top:47%;
+  }
+  .grid{
+    
+    display: block;
+   
+
+  }
+  }
+</style>
+  <nav class="navbar navbar-expand-lg fixed-top ">
+  <div class="container-xl">
+    <a href="/">
+    <img src="logo.jpg" class="img" alt="">
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+      <span>
+        <img src="https://img.icons8.com/android/34/ffffff/menu.png" id="hamburger"/>
+      </span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarsExample07XL" style="">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="" href="/">Početna </a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="/about">O nama</a>
+        </li>
+        <li class="nav-item">
+          <a class="" href="/gallery">Galerija</a>
+        </li>
+        <li class="nav-item">
+          <a class=" disabled" href="/blog" tabindex="-1" aria-disabled="true">Blog </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class=" dropdown-toggle" href="#" id="dropdown07XL" data-toggle="dropdown" aria-expanded="false">Informacije</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown07XL">
+            <a class="dropdown-item" href="/contact">Kontaktirajte nas</a>
+            <a class="dropdown-item" href="/dojam">Ostavite dojam</a>
+           
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  
+  <div class="jumbotron text-center text-light" data-aos="fade-down" id="jumbo">
+    <div class="mreza">
+    <div class="container " id="container">
+      <h1 class="display-6">Upoznajte nas</h1>
+      <p>U ovom tekstu ćete pročitati nekoliko rečenica o nama i o našim karakteristikama i uslugama</p>
+      <p><a class="btn btn-primary btn-md" href="
+      https://www.tripadvisor.com/Restaurant_Review-g294450-d16760495-Reviews-Mornar_Sarajevo-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html" target="_blank" role="button">Saznajte vise &raquo;</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 pt-5 ">
+    <!-- Example row of columns -->
+    <div class="row text-center mb-5 pb-5">
+      <div class="col-md-4">
+        <h2 class="text-center">Naš tim</h2>
+        <p class="lead">Ljubazan i profesionalan tim koji će preuzeti odgovornost kad su u pitanju Vaše narudžbe i spremiti ih sa mnogo ljubavi i pažnje </p>
+        
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Posjetioci</h2>
+        <p class="lead">Sretni i zadovoljni gosti koji posjećuju nase mjesto su uvijek i više nego dobrodošli </p>
+        
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">Naša radnja</h2>
+        <p class="lead"> Malo mjesto u kojem je uvijek pozitivna atmosfera uz najbolju ekipu i društvo .Također , za naše iskrene i zadovoljne 
+          goste , vrata su uvijek otvorena .
+        </p>
+        
+      </div>
+    </div>
+
+    <hr>
+<div class="container my-1" id="vise">
+
+    <p class="font-weight-bold">Ovdje možete pogledati neke od naših specijaliteta koje nudimo .</p>
+
+    <p> <a href="/gallery" class="text-primary font-weight-bold "
+          target="_blank">Pogledajte ostale slike</a></p>
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item mt-5" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top text-center mb-5">
+        <a class="text-dark m-2" href="#multi-item-example" data-slide="prev">
+          <img src="https://img.icons8.com/cotton/64/000000/circled-left--v1.png"/>
+        </a>
+        <a class="text-dark m-2" href="#multi-item-example" data-slide="next">
+          <img src="https://img.icons8.com/cotton/64/000000/circled-right--v2.png"/>
+        </a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="multi-item-example" data-slide-to="1"></li>
+        <li data-target="multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" id="slide" src="about.slider/slide1.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Hamburgeri</h4>
+                  <p class="card-text">Probajte najukusnije hamburgere od više vrsta mesa i obojite vaše pecivo u željenu boju</p>
+                  <h1 class="card-title pricing-card-title">8 - 12 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card ">
+                <img class="card-img-top" id="slide" src="about.slider/slide2.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Srdele - Girice</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Srdele  <p class="ml-auto"> 7 KM</h5></p></div>
+                  <li><div class="row ml-auto">Girice  <p class="ml-auto"> 6 KM</h5></p></div>
+                  </ul>
+                  
+
+                  <h1 class="card-title pricing-card-title">6 - 7 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top"id="slide" src="about.slider/slide3.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Tuna - Losos</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Tuna steak  <p class="ml-auto"> 200g</h5></p></div>
+                       <li><div class="row ml-auto">Losos steak  <p class="ml-auto"> 200g</h5></p></div>
+                  </ul>
+                  <h1 class="card-title pricing-card-title">23 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top"id="slide" src="about.slider/slide4.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Sendviči</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Sendvič losos <p class="ml-auto"> 8 KM</h5></p></div>
+                       <li><div class="row ml-auto">Sendvič tuna <p class="ml-auto"> 8 KM</h5></p></div>
+                      
+                  </ul>
+                  <h1 class="card-title pricing-card-title">8 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" id="slide"src="about.slider/slide5.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Lignje</h4>
+                  <p class="card-text">Probajte svježe lignje sa posebnom pažnjom spremljene od strane naših profesionalnih kuhara</p>
+                  <h1 class="card-title pricing-card-title">7 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top "id="slide" src="about.slider/slide6.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Vitello tonnato</h4>
+                  <p class="card-text">Teletina u sosu sa prilogom</p>
+                 <h1 class="card-title pricing-card-title">/ KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top"id="slide" src="about.slider/slide7.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Pecivo u boji</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Beef Burger <p class="ml-auto"> 8 KM</h5></p></div>
+                       <li><div class="row ml-auto">Chicken Burger <p class="ml-auto"> 5 KM</h5></p></div>
+                       <li><div class="row ml-auto">Tuna Burger <p class="ml-auto"> 12 KM</h5></p></div>
+                  </ul>
+                  <h1 class="card-title pricing-card-title">8 - 12 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top"id="slide" src="about.slider/slide8.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Riblja čorba /supa</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Ljetna</div>
+                       <li><div class="row ml-auto">Zimska</div>
+                       
+                  </ul>
+                  <h1 class="card-title pricing-card-title">6 - 7 KM <small class="text-muted">/ mo</small></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top"id="slide" src="about.slider/slide9.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title" id="radno">Lubin - Orada - Pastrmka</h4>
+                  <ul class="list-unstyled mt-3 mb-4">
+                      <li><div class="row ml-auto">Lubin <p class="ml-auto"> 1 KG - 45 KM</h5></p></div>
+                      <li><div class="row ml-auto">Orada <p class="ml-auto"> 1 KG - 45 KM</h5></p></div>
+                      <li><div class="row ml-auto">Pastrmka <p class="ml-auto"> 1 KG - 30 KM</h5></p></div>
+                      <li><div class="row ml-auto">Morska riba divlja <p class="ml-auto"> 1 KG - 75 KM</h5></p></div>
+
+
+
+                      
+                  </ul>
+                  <h1 class="card-title pricing-card-title">30 - 75 KM <small class="text-muted">/ mo</small></h1>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+  </div>
+  <div class="row pt-2 mb-5" style="height:100%;">
+    <div class="col-sm-4 p-3 text-primary text-center">
+      <h3>Otvoreni smo</h3>
+      <h3><img src="https://img.icons8.com/dotty/44/18D324/shop.png"/></h3>
+      
+    </div>
+    <div class="col-sm-4 p-3 text-primary text-center">
+      <h3 >Ponedjeljak - Nedjelja</h3>
+      <h3 class=" mt-2" style="color: #18D324;">11:30 - 18:30</h3>
+    </div>
+    <div class="col-sm-4 p-3 text-center">
+      <h3 class="text-muted">Vršimo dostavu</h3>
+      <h3><img src="https://img.icons8.com/wired/44/969696/delivery.png"/></h3>
+    </div>
+  </div>
+  </div> <!-- /container -->
+   
+<div class="grid">
+    
+    <div class="text-center m-2">
+            <img src="https://img.icons8.com/doodle/48/000000/group.png"/>
+            <p class=""> <span class="text-warning"> Korisnik</span></p>
+            <p class="text-light">Odlično, sve pohvale ! </p>
+        </div>
+      <div class="text-center  m-2">
+            <img src="https://img.icons8.com/doodle/48/000000/group.png"/>
+            <p class=""><span class="text-warning">Korisnik</span></p>
+            <p class="text-light">Odlično, sve pohvale !</p>
+        </div>
+        <div class="text-center m-2 ">
+            <img src="https://img.icons8.com/doodle/48/000000/group.png"/>
+            <p class=""> <span class="text-warning">Korisnik</span></p>
+            <p class="text-light">Odlično, sve pohvale !</p>
+        </div>
+        <div class="text-center m-2 ">
+            <img src="https://img.icons8.com/doodle/48/000000/group.png"/>
+            <p class=""><span class="text-warning">Korisnik</span></p>
+            <p class="text-light">Odlično, sve pohvale !</p>
+        </div>
+      
+    {{#each result}}
+        <div class="text-center box-hidden">
+            <img src="https://img.icons8.com/doodle/48/000000/group.png"/>
+            <p class=""><span class="text-warning">{{check}}</span></p>
+            <p class="text-light">{{text}}</p>
+        </div>
+    {{/each}}
+    
+</div>
+<div class="container col-sm-4 mt-3 mb-5 wrap-button text-center">
+  <div class="row">
+    <div class="col-sm-6">
+      <button type="button" id="loadMore" class="btn btn-primary mt-5 btn-lg">Učitaj više</button>
+    </div>
+    <div class="col-sm-6 mt-5">
+      <a href="/dojam" class="text-primary">Registrujte se kako bi ostavili dojam.</a>
+    </div>
+  </div>
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(() => {
+
+        $(".box-hidden").slice(0, 0).show();
+
+        $("#loadMore").on("click", (e) => {
+            e.preventDefault();
+
+            $(".box-hidden:hidden").slice(0, 4).slideDown();
+            if ($(".box-hidden:hidden").length == 0) {
+                $("#load").fadeOut("slow");
+            }
+            $("html,body").animate({
+                scrollTop: $(this).offset().top
+            }, 1500);
+        })
+
+    })
+</script>
+</main>

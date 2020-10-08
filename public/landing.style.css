@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
